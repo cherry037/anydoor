@@ -1,0 +1,15 @@
+module.exports = {
+    "extends": ["eslint:recommended"],
+    "rules": ["error", {
+        "allow": ["warn", "error", "info"]
+    }],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "script"
+    },
+    "env": {
+        "node": true,
+        "es6": true
+    }
+}
