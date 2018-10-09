@@ -4,8 +4,14 @@
   "description": "node server learning",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint",
+    "fix": "eslint --fix"
   },
+  "pre-commit": [
+    "fix",
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cherry037/anydoor.git"
@@ -15,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/cherry037/anydoor/issues"
   },
-  "homepage": "https://github.com/cherry037/anydoor#readme"
+  "homepage": "https://github.com/cherry037/anydoor#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
 }
