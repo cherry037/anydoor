@@ -18,7 +18,11 @@
     "url": "https://github.com/cherry037/anydoor/issues"
   },
   "homepage": "https://github.com/cherry037/anydoor#readme",
-  "dependencies": {},
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "handlebars": "^4.0.12",
+    "supervisor": "^0.12.0"
+  },
   "devDependencies": {
     "pre-commit": "^1.2.2"
   }
